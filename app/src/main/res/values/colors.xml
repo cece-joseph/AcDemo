@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000 </color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#0e1111</color>
+    <color name="colorPrimaryDark">#414040</color>
+    <color name="colorAccent">#0e1111</color>
+
+    <color name="text_color">#2E2E2E</color>
+    <color name="lightGray">#F2F2F2</color>
+    <color name="input_background">#166E6A6A</color>
+    <color name="cross_line">#11878095</color>
+    <color name="grey">#637A797C</color>
+
+
+    <color name="dark_charcoal">#333333</color>
+    <color name="eerie_black">#1b1b1b</color>
+    <color name="smoky_lack">#100c08</color>
+    <color name="matte_black">#28282B</color>
+    <color name="onyx">#28282B</color>
+
+    <color name="colorGreen">#7BED8D</color>
+
+
+    <item name="light_blue" type="color">#DBF3FA</item>
+    <item name="light_green" type="color">#D0F0C0</item>
+    <item name="light_purple" type="color">#F5E1FD</item>
+    <item name="light_yellow" type="color">#FFF59D</item>
+    <item name="light_salmon" type="color">#FDB79A</item>
+    <item name="colorRed" type="color">#F41C08</item>
+
+
+    <item name="lighter_blue" type="color">#EAF8FB</item>
+    <item name="lighter_green" type="color">#EAFBE2</item>
+    <item name="lighter_red" type="color">#FBD8D7</item>
+
+    <color name="grey_10">#e6e6e6</color>
+    <color name="grey_600">#757575</color>
+    <color name="grey_800">#424242</color>
+
+    <!--FF000000-->
+</resources>

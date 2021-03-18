@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp">
+
+                   <!-- <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Batch Name : "
+                        android:textSize="16sp" />-->
+
+                    <TextView
+                        android:id="@+id/tv_branch_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FY BCA"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1.4"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:id="@+id/tv_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pending"
+                        android:gravity="center"
+                        android:textColor="@color/white"/>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:weightSum="2"
+               android:layout_marginLeft="15dp"
+               android:layout_marginRight="15dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginBottom="15dp">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:layout_weight="1">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="Amount"
+                       android:textSize="16sp"/>
+
+                   <TextView
+                       android:id="@+id/tv_fee_amount"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="₹ 6000"
+                       android:layout_marginTop="5dp"
+                       android:textColor="@color/text_color"
+                       android:textSize="16sp"/>
+
+
+
+
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:layout_weight="1">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="Paid On"
+                       android:gravity="end"
+                       android:textSize="16sp"/>
+
+                   <TextView
+                       android:id="@+id/tv_paid_on"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="22-March-2020"
+                       android:layout_marginTop="5dp"
+                       android:gravity="end"
+                       android:textColor="@color/text_color"
+                       android:textSize="16sp"/>
+
+
+
+
+
+               </LinearLayout>
+
+
+
+
+           </LinearLayout>
+
+        </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ac.view.ScrChooseCourseType"
+    android:orientation="vertical"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="RtlSymmetry">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Course"
+                    android:textColor="@color/black"
+                    android:textSize="35dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Which one are you interested in?"
+                    android:textSize="22dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="9dp"
+                    app:cardUseCompatPadding="true">
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_admission"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end">
+
+                            <ImageView
+                                android:id="@+id/iv_admission"
+                                android:layout_width="22dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/ic_tick_blue" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_admission"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:text="Admission"
+                            android:textAlignment="center"
+                            android:textColor="@color/grey"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="9dp"
+                    app:cardUseCompatPadding="true">
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_certification"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end">
+
+                            <ImageView
+                                android:id="@+id/iv_certification"
+                                android:layout_width="22dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/ic_tick_blue" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_certification"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:text="Certification"
+                            android:textAlignment="center"
+                            android:textColor="@color/grey"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <TextView
+                    android:id="@+id/tv_error_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <Button
+                        android:id="@+id/bt_continue"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/button_background"
+                        android:text="Continue"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

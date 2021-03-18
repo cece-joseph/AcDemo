@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ac.view.ScrSplash"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@color/grey">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:textColor="@color/black"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        android:gravity="end"
+        android:layout_weight="1"
+      />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:textColor="@color/white"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        android:layout_gravity="start"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>
+
+   <!-- <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/front_running_cheeta"/>
+-->
+
+
+</LinearLayout>

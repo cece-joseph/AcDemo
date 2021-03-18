@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:paddingBottom="60dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="end">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/girl" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:orientation="vertical"
+                        android:gravity="start"
+                        android:layout_marginLeft="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hello!"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Cecelia Joseph"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/curve_corner_background"
+                android:layout_marginTop="90dp">
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Fees"
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:elevation="8dp"
+                            app:cardCornerRadius="8dp"
+                            app:cardUseCompatPadding="true"
+                            app:cardBackgroundColor="@color/lighter_green">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Paid Fee"
+                                    android:textColor="@android:color/holo_green_dark"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="₹ 1,10,765"
+                                    android:textColor="@android:color/holo_green_dark"
+                                    android:textSize="18sp" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:elevation="8dp"
+                            app:cardCornerRadius="8dp"
+                            app:cardUseCompatPadding="true"
+                            app:cardBackgroundColor="@color/lighter_red">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pending Fee"
+                                    android:textColor="@color/colorRed"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="₹ 9,10,765"
+                                    android:textColor="@color/colorRed"
+                                    android:textSize="18sp" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:elevation="8dp"
+                            app:cardCornerRadius="8dp"
+                            app:cardUseCompatPadding="true"
+                            app:cardBackgroundColor="@color/lighter_blue">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total Fee"
+                                    android:gravity="center"
+                                    android:textColor="@android:color/holo_blue_dark"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="₹ 2,765"
+                                    android:gravity="center"
+                                    android:textColor="@android:color/holo_blue_dark"
+                                    android:textSize="18sp" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <!-- <androidx.cardview.widget.CardView
+                             android:layout_width="0dp"
+                             android:layout_height="wrap_content"
+                             android:layout_weight="1"
+                             android:elevation="8dp"
+                             app:cardCornerRadius="8dp"
+                             app:cardUseCompatPadding="true">
+
+                             <LinearLayout
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_margin="10dp"
+                                 android:orientation="vertical">
+
+                                 <TextView
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:text="Past Month"
+                                     android:textSize="14sp" />
+
+                                 <TextView
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:layout_marginTop="10dp"
+                                     android:text="₹ 32,765"
+                                     android:textColor="@color/text_color"
+                                     android:textSize="18sp" />
+
+                             </LinearLayout>
+
+                         </androidx.cardview.widget.CardView>-->
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Payment History"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_payment_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+<!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Attendance "
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="04-Mar-2021"
+                        android:layout_weight="1"
+                        android:gravity="end"/>
+
+
+
+                    </LinearLayout>
+
+&lt;!&ndash;
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:elevation="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardUseCompatPadding="true"
+            android:layout_marginTop="15dp"
+            app:cardBackgroundColor="@color/light_purple">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Attendance"
+                    android:gravity="center"
+                    android:textColor="@android:color/holo_purple"
+                    android:textSize="18sp" />
+
+                &lt;!&ndash;<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="₹ 2,765"
+                    android:gravity="center"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="18sp" />&ndash;&gt;
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+&ndash;&gt;
+
+    </LinearLayout>
+-->
+
+
+    <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Time Table "
+                        android:textColor="@color/text_color"
+                        android:textSize="16sp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="View All"
+                        android:layout_weight="1"
+                        android:gravity="end"/>
+
+
+
+
+                </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:background="@color/light_blue">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="Monday"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:textStyle="bold"
+            android:text="9-Mar-2021" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_time_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

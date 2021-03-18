@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.acdemo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ac.view.ScrStartCourse"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".ac.view.ScrProfile" />
+        <activity android:name=".ac.view.ScrHomeCertificationCourseDetails"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ac.view.ScrTimeTable" />
+        <activity android:name=".ac.view.ScrCertificationCourseDetails" />
+        <activity android:name=".ac.view.ScrAdmin_TeacherLogin" />
+        <activity
+            android:name=".ac.view.ScrSelectUserType"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ac.view.ScrStudentCertificationCourse"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ac.view.ScrChooseCourseType"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ac.view.Testing"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ac.view.ScrStudentAdmission" />
+        <activity
+            android:name=".ac.view.ScrHome"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ac.view.ScrLogin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ac.view.ScrSignUp"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ac.view.ScrSplash"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_Xxbn0uWpKTd0Fd" />
+    </application>
+
+</manifest>

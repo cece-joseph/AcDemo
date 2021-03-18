@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:title="Addmission Form"
+            android:icon="@drawable/ic_person_solid"
+            android:id="@+id/nav_addmission_form"
+
+            />
+
+        <item
+            android:title="Profile"
+            android:icon="@drawable/ic_person_solid"
+            android:id="@+id/nav_profile"
+            />
+
+        <item
+            android:title="Logout"
+            android:icon="@drawable/ic_person_solid"
+            android:id="@+id/nav_logout"
+            />
+
+
+
+    </group>
+</menu>
