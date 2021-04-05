@@ -47,8 +47,21 @@ public class TimeTableAdapter extends RecyclerView.Adapter<TimeTableAdapter.View
     @Override
     public void onBindViewHolder(@NonNull final ViewHolderBid holder, final int i) {
         timeTable = list.get(i);
+        holder.tv_subject_name.setText(timeTable.getSubject_name());
+        holder.tv_teacher_name.setText(timeTable.getTeacher_name());
+        holder.tv_start_time.setText(timeTable.getStart_time());
+        holder.tv_end_time.setText(timeTable.getEnd_time());
 
-
+        if (timeTable.getDay().equals("Monday"))
+        {
+            list.add(timeTable);
+        }else if (timeTable.getDay().equals("Tuesday"))
+        {
+            list.add(timeTable);
+        }else if (timeTable.getDay().equals("Wednesday"))
+        {
+            list.add(timeTable);
+        }
 
     }
 
@@ -65,12 +78,14 @@ public class TimeTableAdapter extends RecyclerView.Adapter<TimeTableAdapter.View
 
     class ViewHolderBid extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        private TextView tv_course_title,tv_course_price;
-        private ImageView iv_course_image;
-        private Button bt_view_courses;
+        private TextView tv_subject_name,tv_teacher_name,tv_start_time,tv_end_time;
 
         private ViewHolderBid(@NonNull View itemView) {
             super(itemView);
+            tv_subject_name=itemView.findViewById(R.id.tv_subject_name);
+            tv_teacher_name=itemView.findViewById(R.id.tv_teacher_name);
+            tv_start_time=itemView.findViewById(R.id.tv_start_time);
+            tv_end_time=itemView.findViewById(R.id.tv_end_time);
 
 
         }

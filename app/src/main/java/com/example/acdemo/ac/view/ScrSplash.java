@@ -6,6 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.acdemo.R;
+import com.example.acdemo.ac.finalmvvm.view.ScrFinalMvvm;
+import com.example.acdemo.ac.mvvmpattern.FinalLoginActivity;
+import com.example.acdemo.ac.mvvmpattern.LoginUserActivity;
+import com.example.acdemo.ac.mvvmpattern.ScrLoginTesting;
+import com.example.acdemo.ac.mvvmpattern.ScrProjectList;
+import com.example.acdemo.ac.mvvmpattern.ScrTesting;
 
 public class ScrSplash extends AppCompatActivity {
 
@@ -32,7 +38,7 @@ public class ScrSplash extends AppCompatActivity {
                 try {
 
                     sleep(3000);
-                    Intent intent=new Intent(ScrSplash.this, ScrSelectUserType.class);
+                    Intent intent=new Intent(ScrSplash.this, ScrFinalMvvm.class);
                     startActivity(intent);
                     finish();
 

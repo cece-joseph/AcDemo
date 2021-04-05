@@ -52,7 +52,7 @@ public class ScrHome extends AppCompatActivity implements NavigationView.OnNavig
         drawer = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-     //   navigationView.setItemIconTintList(null);
+        //   navigationView.setItemIconTintList(null);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
@@ -92,18 +92,17 @@ public class ScrHome extends AppCompatActivity implements NavigationView.OnNavig
         super.onResume();
     }
 
-    private void initPaymentHistory()
-    {
-        rv_payment_history=findViewById(R.id.rv_payment_history);
+    private void initPaymentHistory() {
+        rv_payment_history = findViewById(R.id.rv_payment_history);
 
-        paymentHistoryAdapter=new PaymentHistoryAdapter(this);
+        paymentHistoryAdapter = new PaymentHistoryAdapter(this);
         rv_payment_history.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         rv_payment_history.setAdapter(paymentHistoryAdapter);
 
-        list=new ArrayList<>();
-        list.add(new PaymentHistory("FY BCA","₹ 25000","22-Mar-2020","Confirm"));
-        list.add(new PaymentHistory("TY BCA","₹ 24000","22-Mar-2020","Pending"));
-        list.add(new PaymentHistory("TY BCA","₹ 24500","22-Mar-2020","Pending"));
+        list = new ArrayList<>();
+        list.add(new PaymentHistory("FY BCA", "₹ 25000", "22-Mar-2020", "Confirm"));
+        list.add(new PaymentHistory("TY BCA", "₹ 24000", "22-Mar-2020", "Pending"));
+        list.add(new PaymentHistory("TY BCA", "₹ 24500", "22-Mar-2020", "Pending"));
 
 
         paymentHistoryAdapter.setList(list);
@@ -112,35 +111,43 @@ public class ScrHome extends AppCompatActivity implements NavigationView.OnNavig
 
     }
 
-    public void initTimeTable()
-    {
-        rv_time_table=findViewById(R.id.rv_time_table);
-        timeTableAdapter=new TimeTableAdapter(this);
-        rv_time_table.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
+    public void initTimeTable() {
+        rv_time_table = findViewById(R.id.rv_time_table);
+        timeTableAdapter = new TimeTableAdapter(this);
+        rv_time_table.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         rv_time_table.setAdapter(timeTableAdapter);
 
-
-        timeTableArrayList=new ArrayList<>();
-        timeTableArrayList.add(new TimeTable());
-        timeTableArrayList.add(new TimeTable());
-        timeTableArrayList.add(new TimeTable());
-
-
+        timeTableArrayList = new ArrayList<>();
+        timeTableArrayList.add(new TimeTable("Monday","Android","Ankit Tiwari","8:00 am","8:30 am"));
+        timeTableArrayList.add(new TimeTable("Tuesday","Data Structures","Asif Khan","8:30 am","9:00 am"));
+        timeTableArrayList.add(new TimeTable("Wednesday","C++ Programming","Geeta Deshmukh","9:00 am","9:30 am"));
+        timeTableArrayList.add(new TimeTable("Thursday","OT","Rehman Shaikh","9:30 am","10:00 am"));
+        timeTableArrayList.add(new TimeTable("Monday","OT","Rehman Shaikh","9:30 am","10:00 am"));
+        timeTableArrayList.add(new TimeTable("Tuesday","OT","Rehman Shaikh","9:30 am","10:00 am"));
+        timeTableArrayList.add(new TimeTable("Wednesday","OT","Rehman Shaikh","9:30 am","10:00 am"));
+        timeTableArrayList.add(new TimeTable("Thursday","OT","Rehman Shaikh","9:30 am","10:00 am"));
+        timeTableArrayList.add(new TimeTable("Monday","OT","Rehman Shaikh","9:30 am","10:00 am"));
         timeTableAdapter.setList(timeTableArrayList);
         timeTableAdapter.notifyDataSetChanged();
     }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId())
-        {
+        switch (item.getItemId()) {
 
             case R.id.nav_addmission_form:
-                Intent intent=new Intent(ScrHome.this, ScrStudentAdmission.class);
+                Intent intent = new Intent(ScrHome.this, ScrStudentAdmission.class);
                 startActivity(intent);
                 break;
 
-        }drawer.closeDrawer(GravityCompat.START);
+
+            case R.id.nav_profile:
+                Intent intent1 = new Intent(ScrHome.this, ScrProfile.class);
+                startActivity(intent1);
+                break;
+
+        }
+        drawer.closeDrawer(GravityCompat.START);
         return true;
     }
 }

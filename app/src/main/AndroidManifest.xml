@@ -3,6 +3,8 @@
     package="com.example.acdemo">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -11,11 +13,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ac.view.ScrStartCourse"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".ac.view.ScrProfile" />
-        <activity android:name=".ac.view.ScrHomeCertificationCourseDetails"
-            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ac.finalmvvm.view.ScrFinalMvvm"></activity>
+        <activity android:name=".ac.mvvmpattern.ScrTesting" />
+        <activity android:name=".ac.mvvmpattern.FinalLoginActivity" />
+        <activity android:name=".ac.mvvmpattern.LoginUserActivity" />
+        <activity android:name=".ac.mvvmpattern.ScrLoginTesting" />
+        <activity android:name=".ac.mvvmpattern.ScrProjectList" />
+        <activity
+            android:name=".ac.view.ScrStartCourse"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ac.view.ScrProfile"
+            android:label="Profile" />
+        <activity
+            android:name=".ac.view.ScrHomeCertificationCourseDetails"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ac.view.ScrTimeTable" />
         <activity android:name=".ac.view.ScrCertificationCourseDetails" />
         <activity android:name=".ac.view.ScrAdmin_TeacherLogin" />
